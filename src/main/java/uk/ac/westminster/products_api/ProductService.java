@@ -1,8 +1,11 @@
 package uk.ac.westminster.products_api;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -22,5 +25,14 @@ public class ProductService {
         return product;
     }
 
+    public Optional<Product> getProductById(Long id) {
+        return products.stream()
+                .filter(p->p.getId().equals(id))
+                .findFirst();
+    }
 
+
+    public void deleteProduct(Long id){
+        products.removeIf(p->p.getId().equals(id));
+    }
 }
