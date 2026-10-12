@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Yh7oVPNWzGnK23pOs__q">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="91A77_LaRGfa3a2fRk18-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Customer" vertex="1">
+          <mxGeometry height="150" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="91A77_LaRGfa3a2fRk18-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;- id : Long&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- name : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;email : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Address&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;: address&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="91A77_LaRGfa3a2fRk18-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="+ Customer()&lt;div&gt;+ getId() : Long&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getEmail() : String&lt;/div&gt;&lt;div&gt;+getAddress : Address&lt;/div&gt;&lt;div&gt;+ Customer(Long id, String name, String email, Address address)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="91A77_LaRGfa3a2fRk18-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Address" vertex="1">
+          <mxGeometry height="150" width="300" x="300" as="geometry" />
+        </mxCell>
+        <mxCell id="91A77_LaRGfa3a2fRk18-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- street: String&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- city : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- postcode : String&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="91A77_LaRGfa3a2fRk18-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="+ Product()&lt;div&gt;+ getId() : Long&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPrice() : double&lt;/div&gt;&lt;div&gt;+ Product(Long id, String name, double price)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="300" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ProductController" vertex="1">
+          <mxGeometry height="150" width="300" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="- productService : ProductService" vertex="1">
+          <mxGeometry height="150" width="300" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;- productService : ProductService&lt;/div&gt;&lt;div&gt;+ getAllProducts() : List&amp;lt;Product&amp;gt;&lt;/div&gt;&lt;div&gt;+ getProductById(id : Long) : Product&lt;/div&gt;&lt;div&gt;+ addProduct(product : Product) : Product&lt;/div&gt;&lt;div&gt;+ deleteProduct(id : Long) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ProductService" vertex="1">
+          <mxGeometry height="150" width="300" x="300" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- products: List&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- nextId: Long&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="300" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ getAllProducts() : List&amp;lt;Product&amp;gt;&lt;/div&gt;&lt;div&gt;+ getProductById(id : Long) : Optional&amp;lt;Product&amp;gt;&lt;/div&gt;&lt;div&gt;+ addProduct(product : Product) : Product&lt;/div&gt;&lt;div&gt;+ deleteProduct(id : Long) : void&lt;/div&gt;&lt;div&gt;+ findByName(name : String) : List&amp;lt;Product&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="300" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Product" vertex="1">
+          <mxGeometry height="150" width="300" x="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;- id : Long&lt;/div&gt;&lt;div&gt;- name : String&lt;/div&gt;&lt;div&gt;- price : double&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="600" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d1ejYGL7LJYLcgYrAFva-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ getId() : Long&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPrice() : double&lt;/div&gt;&lt;div&gt;+ setId(id : Long) : void&lt;/div&gt;&lt;div&gt;+ setName(name : String) : void&lt;/div&gt;&lt;div&gt;+ setPrice(price : double) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="600" y="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
