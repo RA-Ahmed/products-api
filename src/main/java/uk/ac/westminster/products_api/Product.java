@@ -26,9 +26,7 @@ public abstract class Product {
         this.price = price;
     }
 
-    public String getSummary() {
-        return getName() + " - £" + getPrice();
-    }
+    public abstract String getSummary() ;
 
     public Long getId() { return id; }
     public String getName() { return name; }
